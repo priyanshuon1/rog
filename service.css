@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page background and font styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: orangered;
+}
+
+/* Container for the services list */
+.services-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgb(184, 181, 181);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Service list styling */
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.service-item {
+    flex: 0 1 calc(33% - 30px); /* 3 items per row with gap */
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    top: 12%;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item h3 {
+    font-size: 1.6rem;
+    color: orangered;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: black;
+}
+
+/* Button styling */
+.book-now-btn {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.book-now-btn:hover {
+    background-color: #1abc9c;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .service-item {
+        flex: 0 1 calc(50% - 30px); /* 2 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item {
+        flex: 0 1 100%; /* 1 item per row */
+    }
+}
